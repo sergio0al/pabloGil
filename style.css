@@ -42,6 +42,28 @@ main img{
     position: relative;
 }
 
+#porro{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 20px;
+    left: 170px;
+    transform: rotate(80deg);
+    animation: porro 2s infinite    ;
+}
+
+@keyframes porro {
+    0%{
+        transform: rotate(78deg);
+    }
+    50%{
+        transform: rotate(82deg)
+    }
+    100%{
+        transform: rotate(78deg );
+    }
+}
+
 #arabe{
     position: absolute;
     width: 60px;
@@ -102,5 +124,11 @@ main img{
         100%  { transform: translate(0, 0); }            
     }
 
+    #porro{
+        width: 200px;
+        height: 200px;
+        top: 90px;
+        left: 54px;
+    }
 
 }
