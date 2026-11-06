@@ -38,6 +38,22 @@ main img{
 #content{
     display: flex;
     background-color: rgb(255, 218, 150);
+    position: relative;
+}
+
+#arabe{
+    position: absolute;
+    width: 60px;
+    height: auto;
+    animation: mover 10s infinite;
+}
+
+@keyframes mover {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(300px, 0); }      
+  50%  { transform: translate(300px, 800px); }  
+  75%  { transform: translate(0, 800px); }      
+  100% { transform: translate(0, 0); }          
 }
 
 #content div{
@@ -69,6 +85,7 @@ main img{
 
     #content{
         flex-direction: column;
+        gap: 30px;
     }
 
     #content div{
