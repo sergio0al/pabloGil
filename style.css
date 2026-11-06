@@ -59,3 +59,25 @@ main img{
 #content p{
     letter-spacing: 1px;
 }
+
+
+@media (max-width: 600px) {
+    main img{
+        width: 100vw;
+        border-bottom: 3px solid black;
+    }
+
+    #content{
+        flex-direction: column;
+    }
+
+    #content div{
+        box-sizing: border-box;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-content: baseline;
+    }
+
+}
